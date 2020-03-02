@@ -15,30 +15,30 @@
         <h1></h1>
         <input type="number" name="numbertwo" id="">
         <a>Second Number</a>
-        <h1><?php
-            switch ($_GET["submit"]) {
-                case "Add":
-                    $totaal = $_GET["numberone"] + $_GET["numbertwo"];
-                    echo $totaal;
-                    break;
-                case "Subtract":
-                    $totaal = $_GET["numberone"] - $_GET["numbertwo"];
-                    echo $totaal;
-                    break;
-                case "Multiply":
-                    $totaal = $_GET["numberone"] * $_GET["numbertwo"];
-                    echo $totaal;
-                    break;
-                case "Divide":
-                    $totaal = $_GET["numberone"] / $_GET["numbertwo"];
-                    echo $totaal;
-                    break;
-                case "Modulo":
-                    $totaal = $_GET["numberone"] % $_GET["numbertwo"];
-                    echo $totaal;
-                    break;
-            }
-            ?></h1>
+        <?php
+        switch ($_GET["submit"]) {
+            case "Add":
+                $totaal = $_GET["numberone"] + $_GET["numbertwo"];
+                echo $totaal;
+                break;
+            case "Subtract":
+                $totaal = $_GET["numberone"] - $_GET["numbertwo"];
+                echo $totaal;
+                break;
+            case "Multiply":
+                $totaal = $_GET["numberone"] * $_GET["numbertwo"];
+                echo $totaal;
+                break;
+            case "Divide":
+                $totaal = $_GET["numberone"] / $_GET["numbertwo"];
+                echo $totaal;
+                break;
+            case "Modulo":
+                $totaal = $_GET["numberone"] % $_GET["numbertwo"];
+                echo $totaal;
+                break;
+        }
+        ?>
         <input type="submit" name="submit" value="Add">
         <input type="submit" name="submit" value="Subtract">
         <input type="submit" name="submit" value="Multiply">
