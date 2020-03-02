@@ -17,26 +17,26 @@
         <a>Second Number</a>
         <?php
         switch ($_GET["submit"]) {
-            case "Add":
-                $totaal = $_GET["numberone"] + $_GET["numbertwo"];
-                echo $totaal;
-                break;
-            case "Subtract":
-                $totaal = $_GET["numberone"] - $_GET["numbertwo"];
-                echo $totaal;
-                break;
-            case "Multiply":
-                $totaal = $_GET["numberone"] * $_GET["numbertwo"];
-                echo $totaal;
-                break;
-            case "Divide":
-                $totaal = $_GET["numberone"] / $_GET["numbertwo"];
-                echo $totaal;
-                break;
-            case "Modulo":
-                $totaal = $_GET["numberone"] % $_GET["numbertwo"];
-                echo $totaal;
-                break;
+        case "Add":
+            $totaal = $_GET["numberone"] + $_GET["numbertwo"];
+            echo $totaal;
+            break;
+        case "Subtract":
+            $totaal = $_GET["numberone"] - $_GET["numbertwo"];
+            echo $totaal;
+            break;
+        case "Multiply":
+            $totaal = $_GET["numberone"] * $_GET["numbertwo"];
+            echo $totaal;
+            break;
+        case "Divide":
+            $totaal = $_GET["numberone"] / $_GET["numbertwo"];
+            echo $totaal;
+            break;
+        case "Modulo":
+            $totaal = $_GET["numberone"] % $_GET["numbertwo"];
+            echo $totaal;
+            break;
         }
         ?>
         <input type="submit" name="submit" value="Add">
